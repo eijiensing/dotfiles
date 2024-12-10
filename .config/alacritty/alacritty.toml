@@ -4,6 +4,9 @@ import = [
 ]
 working_directory = "dev"
 
+[font]
+normal = { family = "CaskaydiaCove Nerd Font Mono", style = "Regular" }
+
 [window]
 startup_mode="Fullscreen"
 padding = { x = 10, y = 10 }
