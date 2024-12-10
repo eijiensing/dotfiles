@@ -1,0 +1,20 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
+]
+working_directory = "dev"
+
+[window]
+startup_mode="Fullscreen"
+padding = { x = 10, y = 10 }
+
+[colors.primary]
+background="#1c1c1c"
+
+
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+[mouse]
+hide_when_typing = true
