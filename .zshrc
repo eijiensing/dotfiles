@@ -68,7 +68,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$HOME/.cargo/bin:$PATH"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
