@@ -70,6 +70,8 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
