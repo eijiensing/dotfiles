@@ -72,6 +72,12 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$HOME/.cargo/bin:$PATH"
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+export PNPM_HOME="/home/eiji/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
