@@ -8,7 +8,7 @@ zstyle ':omz:update' frequency 7
 
 ENABLE_CORRECTION="true"
 
-plugins=(git zsh-autosuggestions z)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -27,9 +27,6 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nvim'
 fi
-
-alias cd='z'
-alias ccd='/bin/cd'
 
 export ZSHZ_CASE=smart
 bindkey '^y' autosuggest-accept
