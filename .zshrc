@@ -30,3 +30,5 @@ fi
 
 export ZSHZ_CASE=smart
 bindkey '^y' autosuggest-accept
+
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
