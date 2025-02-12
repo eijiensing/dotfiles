@@ -1,12 +1,4 @@
-```sh
-git clone https://github.com/eijiensing/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-```
+# 💤 LazyVim
 
-```
-git clone https://github.com/eijiensing/nvim.git %localappdata%\nvim\
-```
-
-
-```
-git clone https://github.com/eijiensing/nvim.git $env:LOCALAPPDATA\nvim\
-```
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
