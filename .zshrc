@@ -32,3 +32,7 @@ export ZSHZ_CASE=smart
 bindkey '^y' autosuggest-accept
 
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH
+
