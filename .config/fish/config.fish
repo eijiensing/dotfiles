@@ -5,6 +5,17 @@ if not contains $PNPM_HOME $PATH
 end
 
 
+set -gx JAVA_HOME /usr/lib/jvm/java-21-openjdk-amd64
+
+set -gx ANDROID_HOME "$HOME/Android/Sdk"
+
+for dir in $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools
+    if not contains $dir $PATH
+        set -gx PATH $dir $PATH
+    end
+end
+
+
 set -g fish_key_bindings fish_vi_key_bindings
 
 function fish_user_key_bindings
