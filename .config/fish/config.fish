@@ -1,13 +1,17 @@
-# 0. Use vi‑style keys
+set -gx PNPM_HOME "/home/$USER/.local/share/pnpm"
+
+if not contains $PNPM_HOME $PATH
+    set -gx PATH $PNPM_HOME $PATH
+end
+
+
 set -g fish_key_bindings fish_vi_key_bindings
 
-# 1. Define *all* custom bindings here
 function fish_user_key_bindings
     # Keep the ↵ autosuggestion accept in insert mode
     bind -M insert \cy accept-autosuggestion
 end
 
-# 2. Misc prompt & helpers (unchanged)
 function fish_greeting
     echo Good afternoon, Mr. Fool~\n
 end
