@@ -46,3 +46,6 @@ function fish_mode_prompt
     printf '%s ' $USER
     set_color normal
 end
+
+
+set -x PATH $HOME/.cargo/bin $PATH
